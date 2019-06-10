@@ -1,0 +1,60 @@
+//
+// Color system
+//
+
+$primary: #4479AF;
+$blue: #4479AF;
+$secondary: #D54120;
+$orange: #D54120;
+$primary-gray: #66707B;
+$primary-gray-dark: #333333;
+
+$link-color: $secondary !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: none !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$container-max-widths: map-merge(
+  (
+    sm: 100%,
+    md: 100%,
+    lg: 1140px,
+    xl: 1300px
+  ),
+  $container-max-widths
+);
+
+$font-family-sans-serif: "Lato", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$headings-font-family: "adelle", serif !default;
+
+$font-size-base: 1.1rem !default;
+$font-size-sm: $font-size-base * .78 !default;
+
+$paragraph-margin-bottom: 2rem !default;
+
+$input-btn-font-size: 1rem;
+$input-btn-padding-y: .75rem !default;
+$input-btn-padding-x: 2.5rem !default;
+$input-btn-padding-y-lg: 1.4rem !default;
+$input-btn-padding-x-lg: 2.5rem !default;
+$input-btn-font-size-lg: $font-size-base;
+$input-btn-padding-y-sm: .75rem !default;
+$input-btn-padding-x-sm: 2rem !default;
+
+.fade-in {
+	-webkit-animation-name: slideNav;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode:forwards;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-fill-mode:forwards;
+}
