@@ -3,6 +3,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 require_once('bs4navwalker.php');
+
+/*
+ * Theme update checker and auto update 
+ */
+require WP_CONTENT_DIR . '/plugins/plugin-update-checker-master/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/abidewebdesign/Corvallis-OSU-Symphony',
+	__FILE__,
+	'Corvallis-OSU-Symphony'
+);
+
+$myUpdateChecker->setBranch('master'); 
+
 function abide_remove_scripts() {
     wp_dequeue_style( 'abide-styles' );
     wp_deregister_style( 'abide-styles' );
