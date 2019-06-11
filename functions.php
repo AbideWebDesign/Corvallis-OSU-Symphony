@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-require_once('bs4navwalker.php');
+require_once('bs4Navwalker.php');
 
 /*
  * Theme update checker and auto update 

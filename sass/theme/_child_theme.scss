@@ -564,6 +564,9 @@ input, textarea {
 		text-decoration: underline;
 	}
 }
+#osu-logo {
+	width: 200px;
+}
 @media (max-width: map-get($grid-breakpoints, 'md')) {
 	#wrapper-footer {
 		#footer-menu {

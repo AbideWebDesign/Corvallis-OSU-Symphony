@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					
 					<div class="row justify-content-center mb-5">
 						
-						<div class="col-12">
+						<div class="col-lg-9">
 							
 							<?php wp_nav_menu(
 								array(
@@ -116,6 +116,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 					
 					</div> <!-- row end -->
+					
+					<div class="mt-5 text-center">
+						
+						<a href="https://oregonstate.edu" target="_blank"><img id="osu-logo" src="<?php echo home_url('/wp-content/themes/abide-child/src/img/logo-osu.png'); ?>" class="img-fluid" /></a>
+						
+					</div>
 					
 				</footer><!-- #colophon -->
 				
