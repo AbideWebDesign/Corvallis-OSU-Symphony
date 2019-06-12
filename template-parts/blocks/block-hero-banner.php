@@ -26,8 +26,10 @@
 			
 			<?php if ( get_sub_field('hero_button') ): ?>
 			
+				<?php $link = get_sub_field('hero_button_link'); ?>
+				
 				<div class="text-center mt-5">
-					<a href="<?php the_sub_field('hero_button_link'); ?>" class="btn btn-secondary btn-lg"><?php the_sub_field('hero_button_label'); ?></a>
+					<a href="<?php echo $link['url']; ?>" class="btn btn-secondary btn-lg" target="<?php echo $link['target']; ?>"><?php the_sub_field('hero_button_label'); ?></a>
 				</div>
 			
 			<?php endif; ?>
