@@ -18,7 +18,7 @@
 				
 				<?php if ( get_sub_field('hero_banner_bottom_text') ): ?>
 				
-					<h4 class="text-white mt-2 mb-0"><?php the_sub_field('hero_banner_bottom_text'); ?></h4>
+					<h4 class="text-white mt-4 mb-0"><?php the_sub_field('hero_banner_bottom_text'); ?></h4>
 					
 				<?php endif; ?>
 				
@@ -28,7 +28,7 @@
 			
 				<?php $link = get_sub_field('hero_button_link'); ?>
 				
-				<div class="text-center mt-5">
+				<div class="text-center mt-4">
 					<a href="<?php echo $link['url']; ?>" class="btn btn-secondary btn-lg" target="<?php echo $link['target']; ?>"><?php the_sub_field('hero_button_label'); ?></a>
 				</div>
 			
