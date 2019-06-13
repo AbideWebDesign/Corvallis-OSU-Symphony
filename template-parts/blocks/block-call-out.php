@@ -4,9 +4,9 @@
 
 		<div class="row justify-content-center">
 			
-			<?php if ( get_sub_field('call_out_type') == 'default' ): ?>
+			<?php if ( get_sub_field('call_out_type') == 'Default' ): ?>
 			
-				<div class="col-md-7 col-lg-6">
+				<div class="col-md-7 col-lg-8">
 					
 					<h2 class="text-white"><?php the_sub_field('call_out_text'); ?></h2>
 					
