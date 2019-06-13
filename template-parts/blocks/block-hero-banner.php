@@ -1,6 +1,12 @@
 <?php 
 
 	$bg_img = wp_get_attachment_image_src(get_sub_field('hero_banner_image'), 'hero banner sm', false);
+	
+	if (!$bg_img) {
+		
+		$bg_img = wp_get_attachment_image_src(315, 'hero banner sm', false);
+		
+	}
 
 ?>
 <div id="section-hero-banner-block" class="section-hero-banner">
@@ -13,12 +19,24 @@
 						
 			<div class="hero-banner-title py-3 text-center">
 				
-				<h1 class="text-white mb-0"><?php the_sub_field('hero_banner_title'); ?></h1>
+				<h1 class="text-white mb-0">
+					
+					<?php if ( get_sub_field('hero_banner_title') ): ?>
+						
+						<?php the_sub_field('hero_banner_title'); ?>
+						
+					<?php else: ?>
+					
+						<?php the_title(); ?>
+						
+					<?php endif; ?>
+				
+				</h1>
 				
 				
 				<?php if ( get_sub_field('hero_banner_bottom_text') ): ?>
 				
-					<h4 class="text-white mt-4 mb-0"><?php the_sub_field('hero_banner_bottom_text'); ?></h4>
+					<p class="lead text-white mt-4 mb-0"><?php the_sub_field('hero_banner_bottom_text'); ?></p>
 					
 				<?php endif; ?>
 				
