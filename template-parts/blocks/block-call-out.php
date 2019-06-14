@@ -4,7 +4,7 @@
 
 		<div class="row justify-content-center align-items-center">
 			
-			<?php if ( get_sub_field('call_out_type') == 'Default' ): ?>
+			<?php if ( get_sub_field('call_out_type') == 'default' ): ?>
 			
 				<div class="col-md-7 col-lg-8">
 					
@@ -28,7 +28,7 @@
 					
 					<?php if ( get_sub_field('call_out_quote_name') ): ?>
 						
-						<p class="text-white"><strong>- <?php the_sub_field('call_out_quote_name'); ?></strong></p>
+						<p class="text-white mb-0"><strong>- <?php the_sub_field('call_out_quote_name'); ?></strong></p>
 						
 					<?php endif; ?>
 					

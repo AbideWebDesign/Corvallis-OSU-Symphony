@@ -16,11 +16,11 @@
                 "id": ""
             },
             "choices": {
-                "Default": "Default",
-                "Quote": "Quote"
+                "default": "Default",
+                "quote": "Quote"
             },
             "default_value": [
-                "Default"
+                "default"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -143,5 +143,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560286593
+    "modified": 1560527725
 }

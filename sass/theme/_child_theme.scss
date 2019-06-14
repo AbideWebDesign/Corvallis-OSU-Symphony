@@ -485,7 +485,7 @@ input, textarea {
 */
 #section-call-out {
 	position: relative;
-	padding: 4em 0 5em 0;
+	padding: 3em 0 4.5em 0;
 	
 	&:before {
 		content: "";
@@ -497,6 +497,10 @@ input, textarea {
 		bottom: 0;
 		left: 0;
 		right: 0;
+	}
+	h2 {
+		font-size: 1.8rem;
+		line-height: 1.4;
 	}	
 	.btn-light, .btn-light:hover {
 		color: $secondary;
