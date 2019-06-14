@@ -60,7 +60,7 @@
 				</div>
 				
 				<div class="col-lg-auto col-md-auto offset-md-4 ml-lg-auto align-self-center mt-3 mt-lg-0 text-center text-md-left">
-					<a target="_blank" href="<?php the_field('tickets_link'); ?>" class="btn btn-primary btn-sm">View Tickets</a> 
+					<a target="_blank" href="<?php the_field('tickets_link'); ?>" class="btn btn-primary btn-sm">Purchase Season Tickets</a> 
 				</div>
 				
 			</div>
