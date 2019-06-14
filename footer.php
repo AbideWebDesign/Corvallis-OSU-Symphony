@@ -142,7 +142,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			
 			<div class="col-auto text-center">
 				
-				&copy; <?php echo date('Y'); ?> Corvallis-OSU Symphony Society. All Rights Reserved. | <a href="<?php echo home_url('privacy'); ?>">Privacy Policy</a> | Website Design by <a href="https://abidewebdesign.com" target="_blank">Abide Web Design</a>
+				&copy; <?php echo date('Y'); ?> Corvallis-OSU Symphony Society. All Rights Reserved. | <a href="<?php echo home_url('privacy'); ?>">Privacy Policy</a> | Website Design by <a href="https://abidewebdesign.com" target="_blank">Abide Web Design</a> | Ticketing System provided by <a href="https://www.arts-people.com/" target="_blank">Arts People</a>
 			
 			</div>
 			
