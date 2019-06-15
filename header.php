@@ -20,6 +20,16 @@ global $post;
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="shortcut icon" href="<?php echo home_url('/wp-content/uploads/2019/06/favicon.png'); ?>" />
 	<?php wp_head(); ?>	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142192223-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-142192223-1');
+	</script>
+
 	<script type="text/javascript">
 		
 
