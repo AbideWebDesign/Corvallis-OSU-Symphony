@@ -96,16 +96,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 									
 									<div class="col-auto">
 										
-										<p class="mb-0"><strong>LaSells Stewart Center</strong></p>
-										<p class="mb-0">875 SW 26th St, Corvallis, OR 97331</p>
-										<p class="mb-0"><a href="<?php echo home_url('/contact-us/parking-directions'); ?>">Parking & Directions <i class="fa fa-caret-right pl-2"></i></a></p>
+										<p class="mb-0"><strong><?php the_field('footer_address_name', 'options'); ?></strong></p>
+										<p class="mb-0"><?php the_field('footer_address', 'options'); ?></p>
+										
+										<?php if ( get_field('include_directions') ): ?>
+										
+											<p class="mb-0"><a href="<?php echo home_url('/contact-us/parking-directions'); ?>">Parking & Directions <i class="fa fa-caret-right pl-2"></i></a></p>
+											
+										<?php endif; ?>
 
 									</div>
 									
 									<div class="col-auto align-self-center mt-3 mt-lg-0">
 										
-										<p class="mb-0"><i class="fa fa-phone pr-2"></i> 541.286.5580</p>
-										<p class="mb-0"><i class="fa fa-envelope pr-2"></i> <a href="mailto:office@cosusymphony.org">office@cosusymphony.org</a></p>
+										<p class="mb-0"><i class="fa fa-phone pr-2"></i> <?php the_field('phone', 'options'); ?></p>
+										<p class="mb-0"><i class="fa fa-envelope pr-2"></i> <a href="<?php the_field('email', 'options'); ?>"><?php the_field('email', 'options'); ?></a></p>
 										
 									</div>
 									

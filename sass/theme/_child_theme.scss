@@ -451,6 +451,28 @@ input, textarea {
 	hr {
 		margin-bottom: 2rem;
 	}
+	.gallery {
+		@extend .row;
+		@extend .justify-content-center;
+		
+		.gallery-item {
+			@extend .col-lg-4;
+			@extend .col-md-6;
+			
+			@include media-breakpoint-down(md) {
+				img {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.gallery-caption {
+			@extend .bg-light;
+			padding: 1em;
+			font-size: $font-size-sm;
+			text-align: center;
+			border: 1px solid $gray-300;
+		}
+	}
 }
 .page-id-160 {
 	.section-basic-content {
