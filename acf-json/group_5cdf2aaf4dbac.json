@@ -17,11 +17,10 @@
             },
             "choices": {
                 "image": "Text with Image",
-                "buttons": "Text with Buttons"
+                "buttons": "Text with Buttons",
+                "video": "Text with Video"
             },
-            "default_value": [
-                "image"
-            ],
+            "default_value": "image",
             "allow_null": 0,
             "multiple": 0,
             "ui": 1,
@@ -317,6 +316,33 @@
                             "placeholder": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_5f90aa62bc563",
+                    "label": "Card Video",
+                    "name": "card_video",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5cdf2ae163a39",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         }
@@ -336,7 +362,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1560286599
+    "modified": 1603318525
 }
