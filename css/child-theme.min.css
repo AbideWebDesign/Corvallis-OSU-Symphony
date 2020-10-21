@@ -12957,7 +12957,7 @@ input, textarea {
   content: "";
 }
 .accordion button:after {
-  font-family: "Font Awesome 5 Free";
+  font-family: "FontAwesome";
   content: "";
   position: absolute;
   right: 30px;

@@ -26,22 +26,13 @@ global $post;
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
 	  gtag('config', 'UA-142192223-1');
 	</script>
 
 	<script type="text/javascript">
 		
 
-		jQuery(function ($) {
-/*
-			$(".dropdown, .btn-group").hover(function(){
-				var dropdownMenu = $(this).children(".dropdown-menu");
-				if(dropdownMenu.is(":visible")){
-					dropdownMenu.parent().toggleClass("open");
-				}
-			});		
-*/				
+		jQuery(function ($) {			
 			// Override Bootstrap dropdown behavior
 			$('#navbarNavDropdown .dropdown > a').click(function() {
 				location.href = $(this).attr('href');
