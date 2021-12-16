@@ -90,7 +90,7 @@ function register_concert() {
 		'label'                 => __( 'Concert', 'text_domain' ),
 		'description'           => __( 'Season Concerts', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( '' ),
+		'supports'              => array( 'title' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -122,4 +122,22 @@ if ( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 	
+}
+
+function humanTiming ($time) {
+  $time = time() - $time; // to get the time since that moment
+  $tokens = array (
+      31536000 => 'year',
+      2592000 => 'month',
+      604800 => 'week',
+      86400 => 'day',
+      3600 => 'hour',
+      60 => 'minute',
+      1 => 'second'
+  );
+  foreach ($tokens as $unit => $text) {
+      if ($time < $unit) continue;
+      $numberOfUnits = floor($time / $unit);
+      return $numberOfUnits.' '.$text.(($numberOfUnits>1)?'s':'');
+  }
 }

@@ -126,6 +126,12 @@ h2 {
 	}
 
 }
+.single {
+	#wrapper-navbar {
+		position: inherit;
+		background-color: $primary;
+	}
+}
 #wrapper-navbar {
 	position: absolute;
     top: 0;
@@ -606,4 +612,47 @@ input, textarea {
 			}
 		}
 	}
+}
+#wrapper-social {
+	.fa-inverse {
+		color: white;
+	}
+	.fa-circle {
+		color: $primary;
+	}
+}
+#twitter-id-link {
+    display: block;
+    color: #333
+}
+
+#twitter-id-link .well {
+    margin-bottom: 0;
+    padding: 15px;
+    border: none;
+    background-color: white
+}
+
+#twitter-id-link #twitter-id {
+    padding-left: 16px
+}
+
+#twitter-id-link:hover {
+    text-decoration: none
+}
+
+#tweet {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #333
+}
+#tweet-meta,
+#tweet-meta a {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #777
+}
+.wdi_feed_users {
+	display: none;
 }
