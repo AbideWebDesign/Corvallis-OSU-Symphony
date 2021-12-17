@@ -23,7 +23,7 @@ $date = new DateTime( get_field('date') );
 				
 				<?php if ( get_field('image') ): ?>
 								
-					<?php echo wp_get_attachment_image( get_field('image'), 'full', false, array('class'=>'img-fluid')); ?>
+					<?php echo wp_get_attachment_image( get_field('image'), 'large', false, array('class'=>'img-fluid')); ?>
 					
 				<?php endif; ?>
 				
