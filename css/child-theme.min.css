@@ -13192,3 +13192,11 @@ input, textarea {
 .wdi_feed_users {
   display: none;
 }
+
+.sponsor-logo:not(:last-child) {
+  margin-right: 1em;
+}
+
+.sb_instagram_header {
+  display: none;
+}

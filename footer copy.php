@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
+
 <div class="wrapper bg-light py-5" id="wrapper-social">
 	
 	<div class="container">
@@ -34,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			
 				</a>
 					
-				<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+				<?php echo do_shortcode('[wdi_feed id="2"]'); ?>
 				
 			</div>
 			
@@ -110,54 +111,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 	</div>
 	
-</div>
-
-<div class="py-4">
-	
-	<div class="container">
-		
-		<div class="row justify-content-center">
-			
-			<div class="col">
-				
-				<div class="text-center">
-					
-					<div class="row justify-content-center">
-						
-						<?php while ( have_rows('sponsor_logos', 'options') ): the_row(); ?>
-							
-							<div class="col-6 col-md-3 col-lg-auto align-self-center mb-2">
-								
-								<div class="bg-white p-2 rounded">
-									
-									<?php if ( get_sub_field('link') ): ?><a href="<?php the_sub_field('link'); ?>" target="_blank"><?php endif; ?>
-									
-									<?php if ( get_sub_field('type') == 'Landscape' ): ?>
-																		
-										<?php echo wp_get_attachment_image( get_sub_field('logo'), 'medium', false, array('class'=>'img-fluid', 'style'=>'max-width: 180px') ); ?>
-										
-									<?php else: ?>
-									
-										<?php echo wp_get_attachment_image( get_sub_field('logo'), 'medium', false, array('class'=>'img-fluid', 'style'=>'max-width: 100px') ); ?>
-									
-									<?php endif; ?>
-									
-									<?php if ( get_sub_field('link') ): ?></a><?php endif; ?></div>
-									
-								</div>
-						
-						<?php endwhile; ?>
-						
-					</div>
-						
-				</div>
-				
-			</div>
-		
-		</div>
-		
-	</div>
-
 </div>
 
 <div class="wrapper" id="wrapper-footer">
@@ -268,7 +221,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 					
 					</div> <!-- row end -->
-										
+					
+					<div class="mt-5 text-center">
+						
+						<a href="https://oregonstate.edu" target="_blank"><img id="osu-logo" src="<?php echo home_url('/wp-content/themes/abide-child/src/img/logo-osu.png'); ?>" class="img-fluid" /></a>
+						
+					</div>
+					
 				</footer><!-- #colophon -->
 				
 
