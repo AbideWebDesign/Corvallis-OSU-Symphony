@@ -88,20 +88,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 						
 								<i class="fa fa-circle fa-stack-2x"></i>
 						
-								<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
 						
 							</span>
 							
-							Facebook
+							Youtube
 						
 						</a>
 				
 					</div>
 					
-					<div id="fb-root"></div>
-					<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=6390242821017538&autoLogAppEvents=1" nonce="0TU8PCLp"></script>
-					<div class="fb-page" data-href="https://www.facebook.com/cosusymphony/" data-tabs="timeline" data-width="" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/cosusymphony/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cosusymphony/">Corvallis-OSU Symphony</a></blockquote></div>
+					<div class="embed-responsive embed-responsive-16by9">
 					
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLCqkk-Rs0jOSBedoc1WqHIlJuF62AbSsh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+					</div>
+									
 				</div>
 				
 			</div>
