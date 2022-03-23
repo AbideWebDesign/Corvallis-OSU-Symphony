@@ -130,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							
 							<div class="col-6 col-md-3 col-lg-auto align-self-center mb-2">
 								
-								<div class="bg-white p-2 rounded">
+								<div class="p-2 px-lg-5 rounded">
 									
 									<?php if ( get_sub_field('link') ): ?><a href="<?php the_sub_field('link'); ?>" target="_blank"><?php endif; ?>
 									
