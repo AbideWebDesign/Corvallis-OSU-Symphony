@@ -13200,3 +13200,10 @@ input, textarea {
 .sb_instagram_header {
   display: none;
 }
+
+.concert-list-item p {
+  margin-bottom: 1em;
+}
+.concert-list-item p:last-child {
+  margin-bottom: 0;
+}
